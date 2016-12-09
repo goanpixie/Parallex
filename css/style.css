@@ -73,17 +73,19 @@ margin: 50px auto;
 #snowflakes1 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -54px; left: -102px; }
 #snowflakes2 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -33px; right: -100px; }
 
-#slide1, #slide2{ width: 100%; }
+#slide1, #slide2{ width: 100%; height:auto;  min-height: 100%;
+  min-width: 1024px; }
 #slide1{
-background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+background:url('../img/IMG_0847 2.JPG') 100% 0 no-repeat;
 color: #fff;
+
 height: 600px;
 margin: 0;
 padding: 200px 0 260px 0;
-background-size: cover;
+background-size: 100% 100%;
 }
 #slide2{
-background-color: #fff;
+background-color: orange;
 color: #333333;
 height: 300px;
 margin: 0 auto;
@@ -91,11 +93,11 @@ overflow: hidden;
 padding: 200px 0;
 }
 #slide3{
-background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+background: url(../img/street_girl.jpg) 100% 0 no-repeat fixed;
 color: #fff;
 height: 600px;
 padding: 170px 0 0 0;
-background-size: cover;
+background-size: 100% 100%;
 }
 #slide4{
 background-color: #fff;
