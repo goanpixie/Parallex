@@ -5,6 +5,12 @@
  <title>Creating a Simple Parallax Scrolling Website</title>
  <link rel="stylesheet" href="css/style.css"/>
  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+<script src="assets/skrollr.min.js"></script>
+
+<script>
+    skrollr.init();
+</script>
  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
@@ -62,11 +68,11 @@ $(this).click(function() {
 <div id="logo"><a href=""> PRIYANKA SHAH </a></div>
 <nav id="nav">
  <ul>
- <li><a href="#slide1" class="active" title="Next Section" >Slide 1</a></li>
+ <li><a href="#slide1" class="active" title="Next Section" >Welcome</a></li>
  <li><a href="#slide2" title="Next Section">About Me</a></li>
- <li><a href="#slide3" title="Next Section">Slide 3</a></li>
- <li><a href="#slide4" title="Next Section">Slide 4</a></li>
- <li><a href="#slide5" title="Next Section">Slide 5</a></li>
+ <li><a href="#slide3" title="Next Section">Skill Set</a></li>
+ <li><a href="#slide4" title="Next Section">Projects</a></li>
+ <li><a href="#slide5" title="Next Section">Education & Experience</a></li>
  </ul>
 </nav>
 </div>
@@ -101,46 +107,57 @@ $(this).click(function() {
  <div class="quotes_container">
  <h3>Skill Set</h3>
  <h3 class="quotes">
-<p><b>LANGUAGES</b>
-JavaScript
-Python
-Ruby</p>
+ <div class="about-us">
 
-<p><b>FRONT END</b>
-Angular JS
-Express /Socket.IO
-HTML5
-CSS3
- -Bootstrap
- -Responsive Web Development
-Http Request/Response
+<b>LANGUAGES</b><br>
+JavaScript,
+Python,
+Ruby
+<hr>
+
+<b>FRONT END</b> <br>
+Angular JS,
+Express /Socket.IO,
+HTML5, 
+Http Request/Response,
 AJAX
-jQuery
+jQuery<br>
+CSS3: 
+ Bootstrap,
+ Responsive Web Development 
 
-<b>DATABASES</b>
-SQL (MySQL, SQLite)
-NoSQL (MongoDB)
+<hr>
+
+<b>DATABASES</b><br>
+SQL (MySQL, SQLite),
+NoSQL (MongoDB),
 Mongoose JS
 
-<b>SERVERS</b>
-WEBrick
-Node JS
-Apache
+<hr>
+<b>SERVERS</b> <br>
+WEBrick,
+Node JS,
+Apache,
 Nginx
 
-<b>DEVELOPMENT</b>
-Object Oriented Programming
-MVC
-Test Driven Development
-API Integration
-Shell Commands
-RESTful Architecture
-Git and Github Version Control
+<hr>
+
+<b>DEVELOPMENT</b><br>
+Object Oriented Programming,
+MVC,
+Test Driven Development,
+API Integration,
+Shell Commands,
+RESTful Architecture,
+Git and Github Version Control,
 Algorithms
 
-<b>DEPLOYMENT</b>
-AWS Deployment
+<hr>
+
+<b>DEPLOYMENT</b> <br>
+AWS Deployment,
 Heroku
+</div>
 </h3>
  <img src="" align="left"/> <h4 class="author_name_white"></h4>
  </div> 
@@ -150,15 +167,20 @@ Heroku
  <div class="content">
  <div class="quotes_container">
  <h3>Projects</h3>
- <h3 class="quotes">BUCKET-LIST
+ <h3 class="quotes">
+<b>BUCKET-LIST</b> <br>
 Built with MEAN-stack, JavaScript, Angular material, CSS3 
 Tasks: Full development, AWS deployment
 
-QUOTE-NOTER
+<hr>
+
+<b>QUOTE-NOTER</b> <br>
 Built with Python, SQL backend, CSS3 
 Tasks: Full development, AWS deployment
 
-SHEETY APP 
+<hr>
+
+<b>SHEETY APP</b> <br>
 Built with MEAN-stack, Angular-material and bootstrap
 Tasks: Full development, Github co-ordinated, soon-to-be used 
 </h3>
@@ -170,24 +192,35 @@ Tasks: Full development, Github co-ordinated, soon-to-be used
  <div class="content">
  <div class="quotes_container">
  <h3>Education & Experience</h3>
- <h3 class="quotes">Coding Dojo
+ <h3 class="quotes">
+
+<b><u>Education:</u></b> <br>
+<b>Coding Dojo</b> <br>
 June 2016 - October 2016
 Full-immersion onsite program
 
-Johns Hopkins University
+<hr>
+
+<b>Johns Hopkins University </b>
 September 2009 –March 2011
 Master of Science (Major: Biotechnology)
 
-+Biochemist
-National Institutes of Health, MD (2011-2015)
+<hr>
+
+<b><u>Experience:</u></b> <br>
+<b>+Biochemist</b> <br>
+<u>National Institutes of Health, MD (2011-2015)</u> <br>
 Worked on a protein involved in Alzheimer’s disease called Neurotensin (NTR). Performed large-scale Protein expression for NTR, designed experiments for gene cloning and gene manipulation. 
 Publications: 
 1.Structure of the agonist-bound Neurotensin receptor, Nature (2012)
 2.Structural prerequisites for G-protein activation by the Neurotensin receptor, Nature Communications (2015)
 
-+Digital Marketing intern
-Student Opportunity Center, DC
+<hr>
+
+<b>+Digital Marketing intern </b> <br>
+<u>Student Opportunity Center, DC </u> <br>
 Start-up environment. Worked on Mail Chimp based email template to promote the company to university admins, students. Learnt CSS3, Animation, template-building and Photoshop.
+<hr>
 </h3>
  <img src="" align="left"/> <h4 class="author_name_white"></h4>
  </div> 
