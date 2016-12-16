@@ -7,10 +7,11 @@ h1 {
 font-family:"Arvo";
 font-weight:normal;
 font-size: 55px;
-text-align: center;
+text-align: left;
 color: #fff;
 margin: 0;
 padding: 0;
+background: black;
 }
 h2 {
 font-family:"Arvo";
@@ -30,18 +31,27 @@ margin: 5px 0;
 padding: 0;
 z-index: 1;
 position: relative;
-color: black;
+color: #fff;
+
 }
 
 #header {
-width: 100%;
-background: url('../img/header-bg.png');
-height: 80px;
+width: 100px;
+
+height: 800px;
 position: fixed;
 margin-top: 30px;
+    display: block;
+    float: right;
+    text-align: right;
+    padding-top: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding-left: 89%;
+
 }
-#nav { width: 410px; float: right; margin-top: 20px; }
-#logo a { color: black; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; font-family:"Wellfleet"; font-weight: bold; }
+#nav { width: 160px; float: right; margin-top: 20px; }
+#logo a { color: #fff; text-decoration: none; text-align: right; font-size: 28px; margin-top: 20px; font-family:"Wellfleet"; font-weight: bold;}
 #nav ul{
 list-style: none;
 display: block;
@@ -53,7 +63,7 @@ margin-top: 9px;
 float: left;
 padding-left: 21px;
 }
-#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; background: black; padding:10px;}
 #nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
 #nav li a:hover { color: #fff; opacity:1; }
 
@@ -64,10 +74,23 @@ font-weight: normal;
 font-size: 20px;
 text-align: left;
 margin: 50px auto;
+width: 800px;
+}
+
+#About_me{
+font-family: 'Goudy Bookletter 1911', serif;
+font-weight: normal;
+
+font-size: 18px;
+text-align: right;
+// margin: 50px auto;
+width: 400px;
+float: right;
+
 }
 
  .author_name_white { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #fff; font-size: 20px; } 
- .author_name_gray { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; } 
+ .profile_pic{ font-family:"Wellfleet"; color: #94a4a4; font-size: 20px;} 
  .quotes_container { width: 800px; margin: 0 auto; }
 #christmas_tree { background: url('../img/christmas-tree.png')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
 #divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
@@ -87,16 +110,16 @@ padding: 200px 0 260px 0;
 background-size: 100% 100%;
 }
 #slide2{
-background: url(../img/WOOD5.jpg) 50% 0 no-repeat fixed;
-color: #333333;
-height: 300px;
+background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
+color: #fff;
+height: 600px;
 margin: 0 auto;
 overflow: hidden;
 padding: 200px 0;
 background-size: 100% 100%;
 }
 #slide3{
-background: url(../img/WOOD6.jpg) 50% 0 no-repeat fixed;
+background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 color: #fff;
 height: 600px;
 padding: 170px 0 0 0;
@@ -106,14 +129,14 @@ background-size: 100% 100%;
 
 
 #slide4{
-background:  url(../img/WOOD5.jpg) 50% 0 no-repeat fixed;
+background:  url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 color: #333333;
 height: 300px;
 padding: 200px 0;
 background-size: 100% 100%;
 }
 #slide5{
-background: url(../img/WOOD5.jpg) 50% 0 no-repeat fixed;
+background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 height: 300px;
 margin: 0 auto;
 padding: 250px 0;
