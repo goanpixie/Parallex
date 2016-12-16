@@ -1,112 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <title>Creating a Simple Parallax Scrolling Website</title>
- <link rel="stylesheet" href="css/style.css"/>
- <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 
-<script src="assets/skrollr.min.js"></script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Creating a Simple Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script>
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+    <script>
+    $(document).ready(function() {
+        $('a[href*=#]').each(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') & amp; amp; & amp; amp; location.hostname == this.hostname & amp; amp; & amp; amp; this.hash.replace(/#/, '')) {
+                var $targetId = $(this.hash),
+                    $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                if ($target) {
+                    var targetOffset = $target.offset().top;
+                    $(this).click(function() {
+                        $("#nav li a").removeClass("active");
+                        $(this).addClass('active');
+                        $('html, body').animate({
+                            scrollTop: targetOffset
+                        }, 1000);
+                        return false;
+                    });
+                }
+            }
+        });
 
-<script>
-    skrollr.init();
-</script>
- <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
- <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
- <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
- <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
- <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
- <script>
- $(document).ready(function() {
-$('a[href*=#]').each(function() {
-if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-&amp;amp;&amp;amp; location.hostname == this.hostname
-&amp;amp;&amp;amp; this.hash.replace(/#/,'') ) {
-var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-if ($target) {
-var targetOffset = $target.offset().top;
-$(this).click(function() {
-$("#nav li a").removeClass("active");
-$(this).addClass('active');
-$('html, body').animate({scrollTop: targetOffset}, 1000);
-return false;
-});
-}
-}
-});
+    });
 
-});
+    $(document).ready(function() {
+        $('a[href*=#]').each(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname && this.hash.replace(/#/, '')) {
+                var $targetId = $(this.hash),
+                    $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                if ($target) {
+                    var targetOffset = $target.offset().top;
+                    $(this).click(function() {
+                        $("#nav li a").removeClass("active");
+                        $(this).addClass('active');
+                        $('html, body').animate({
+                            scrollTop: targetOffset
+                        }, 1000);
+                        return false;
+                    });
+                }
+            }
+        });
 
- $(document).ready(function() {
-  $('a[href*=#]').each(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-       if ($target) {
-         var targetOffset = $target.offset().top;
-$(this).click(function() {
- $("#nav li a").removeClass("active");
- $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
-           return false;
-         });
-      }
-    }
-  });
-
-});
-         
- </script>
+    });
+    </script>
 </head>
 
 <body>
-<header id="header">
-<div class="content">
-<div id="logo"><a href=""> PRIYANKA SHAH </a></div>
-<nav id="nav">
- <ul>
- <li><a href="#slide1" class="active" title="Next Section" >Welcome</a></li>
- <li><a href="#slide2" title="Next Section">About Me</a></li>
- <li><a href="#slide3" title="Next Section">Skill Set</a></li>
- <li><a href="#slide4" title="Next Section">Projects</a></li>
- <li><a href="#slide5" title="Next Section">Education & Experience</a></li>
- </ul>
-</nav>
-</div>
-</header>
-<h1>Hello</h1>
- <div id="slide1">
- <div class="content">
- <h2>WELCOME</h2>
- <h1>EARTHLING</h1>
- <div id="divider"> </div>
- <h3></h3>
- <div id="ribbon"></div>
- <div id="new_year"> </div>
- </div> 
- </div> 
- <div id="slide2">
- <div class="content" >
- <div class="quotes_container">
- <h3>About Me</h3>
- <h6 class="quotes">
+    <header id="header">
+        <div class="content">
+            <div id="logo"><a href=""> </a></div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#slide1" class="active" title="Next Section">Welcome</a></li>
+                    <li><a href="#slide2" 
+                     title="Next Section">About Me</a></li>
+                    <li><a href="#slide3" title="Next Section">Skill Set</a></li>
+                    <li><a href="#slide4" title="Next Section">Projects</a></li>
+                    <li><a href="#slide5" title="Next Section">Experience</a></li>
+                    <li><a href="#slide6" title="Next Section">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>PRIYANKA SHAH</h1>
+    <div id="slide1">
+        <div class="content">
+            <h2>WELCOME</h2>
+            <h2>EARTHLING</h2>
+            <div id="divider"> </div>
+            <h3></h3>
+            <div id="ribbon"></div>
+            <div id="new_year"> </div>
+        </div>
+    </div>
+    <div id="slide2">
+        <div class="content">
+            <div class="quotes_container">
+                <h3>About Me <br><br>
+                “Do one thing every day that scares you.” <hr></h3> 
+                <h6 class="quotes">
+
+ <div class="profile_pic"><img src="img/profile.jpg" height="400" width="auto" align="left"/> </div>
+ <div id="About_me">
+
  <p>“Hi! Welcome to my page! I am Full stack Webdeveloper. I started my journey as a Biochemist and worked as researcher for National Institutes of Health for 4 years in Alzheimer's research.</p>
 
  <p>My soul however searched for more creative field where I could express myself with basic starter culture of a laptop and experiment on wider canvas. Coding bug bit me and I havent been the same since. I got formally trained through 3 month full-immersion Coding bootcamp, Coding Dojo, DC(2016) and I am now all game to enter the coding world!”</p>
 
  <p>I especially love Algorithms and am always up for and to give a challenge. My dream job is to work in diverse team which makes application driven innovative software which is simple and accessble.Besides coding I like travelling, adventure sports & photography.</p></h6>
- <img src="img/DNA.jpg" height="100" width="100" align="left"/> <h4 class="author_name_gray"></h4>
- </div> 
- </div> 
- </div> 
- <div id="slide3">
- <div class="content">
- <div class="quotes_container">
- <h3>Skill Set</h3>
- <h3 class="quotes">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="slide3">
+        <div class="content">
+            <div class="quotes_container">
+                <h3>Skill Set</h3>
+                <h3 class="quotes">
  <div class="about-us">
 
 <b>LANGUAGES</b><br>
@@ -159,15 +164,16 @@ AWS Deployment,
 Heroku
 </div>
 </h3>
- <img src="" align="left"/> <h4 class="author_name_white"></h4>
- </div> 
- </div> 
- </div> 
- <div id="slide4">
- <div class="content">
- <div class="quotes_container">
- <h3>Projects</h3>
- <h3 class="quotes">
+                <img src="" align="left" />
+                <h4 class="author_name_white"></h4>
+            </div>
+        </div>
+    </div>
+    <div id="slide4">
+        <div class="content">
+            <div class="quotes_container">
+                <h3>Projects</h3>
+                <h3 class="quotes">
 <b>BUCKET-LIST</b> <br>
 Built with MEAN-stack, JavaScript, Angular material, CSS3 
 Tasks: Full development, AWS deployment
@@ -184,15 +190,16 @@ Tasks: Full development, AWS deployment
 Built with MEAN-stack, Angular-material and bootstrap
 Tasks: Full development, Github co-ordinated, soon-to-be used 
 </h3>
- <img src="" align="left"/> <h4 class="author_name_gray"></h4>
- </div> 
- </div> 
- </div> 
- <div id="slide5">
- <div class="content">
- <div class="quotes_container">
- <h3>Education & Experience</h3>
- <h3 class="quotes">
+                <img src="" align="left" />
+                <h4 class="author_name_gray"></h4>
+            </div>
+        </div>
+    </div>
+    <div id="slide5">
+        <div class="content">
+            <div class="quotes_container">
+                <h3>Education & Experience</h3>
+                <h3 class="quotes">
 
 <b><u>Education:</u></b> <br>
 <b>Coding Dojo</b> <br>
@@ -222,11 +229,14 @@ Publications:
 Start-up environment. Worked on Mail Chimp based email template to promote the company to university admins, students. Learnt CSS3, Animation, template-building and Photoshop.
 <hr>
 </h3>
- <img src="" align="left"/> <h4 class="author_name_white"></h4>
- </div> 
- <div id="copyright"><a href=""></a></div> 
- </div> 
- </div> 
+                <img src="" align="left" />
+                <h4 class="author_name_white"></h4>
+            </div>
+            <div id="copyright">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
