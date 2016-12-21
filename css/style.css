@@ -1,12 +1,18 @@
+html{
+	font-size: 1rem;
+}
+
 body{
 margin: 0;
 padding: 0;
 width: 100%;
+height: auto;
+font-size: 1em;
 }
 h1 {
 font-family:"Arvo";
 font-weight:normal;
-font-size: 55px;
+font-size: 3rem;
 text-align: left;
 color: #fff;
 margin: 0;
@@ -17,7 +23,7 @@ position:fixed;
 h2 {
 font-family: 'Permanent Marker', cursive;
 font-weight: normal;
-font-size: 60px;
+font-size: 3.1rem;
 text-align: center;
 color: #fff;
 margin: 0;
@@ -26,7 +32,7 @@ padding: 0;
 h3 {
 font-family: 'Permanent Marker', cursive;
 font-weight: normal;
-font-size: 25px;
+font-size: 1.5rem;
 text-align: center;
 margin: 5px 0;
 padding: 0;
@@ -37,22 +43,22 @@ color: #fff;
 }
 
 #header {
-width: 100px;
+width: 10%;
 
-height: 800px;
+height: 10%;
 position: fixed;
-margin-top: 30px;
+margin-top: 2em;
     display: block;
     float: right;
     text-align: right;
-    padding-top: 30px;
-    font-weight: 600;
+    padding-top: 2em;
+    font-weight: 37.5em;
     color: #FFFFFF;
     padding-left: 89%;
 
 }
-#nav { width: 160px; float: right; margin-top: 20px; }
-#logo a { color: #fff; text-decoration: none; text-align: right; font-size: 28px; margin-top: 20px; font-family:"Wellfleet"; font-weight: bold;}
+#nav { width: 11em; float: right; margin-top: 1em; }
+#logo a { color: #fff; text-decoration: none; text-align: right; font-size: 1.75em; margin-top: 1.25em; font-family:"Wellfleet"; font-weight: bold;}
 #nav ul{
 list-style: none;
 display: block;
@@ -60,66 +66,76 @@ margin: 0 auto;
 list-style: none;
 }
 #nav li{
-margin-top: 9px;
+margin-top: 0.5em;
 float: left;
-padding-left: 21px;
+padding-left: 1.25em;
+padding-right: 1.25em;
 }
-#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; background: black; padding:10px;}
-#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
-#nav li a:hover { color: #fff; opacity:1; }
+#nav li a { color: #fff; opacity:0.6; font-size: 1em; text-decoration: none; font-family: 'Wellfleet'; padding:0.63em;}
+#nav li a.active { color: #fff; opacity:1; border-bottom: 1.5em; solid #fff; }
+#nav li a:hover { color: orange; opacity:1; }
+
+.black-box{
+height: 5em;
+width: 7em;
+background: black;
+padding-top: 11em ;
+z-index: -1;
+position:absolute;
+
+}
 
 .quotes {
 font-family: 'Goudy Bookletter 1911', serif;
 font-weight: normal;
-font-size: 20px;
+font-size: 1.1em;
 text-align: left;
-margin: 50px auto;
-width: 800px;
+margin: 3em auto;
+width: 50em;
 }
 
 #About_me{
 font-family: 'Goudy Bookletter 1911', serif;
 font-weight: normal;
 
-font-size: 18px;
-text-align: right;
+font-size: 1em;
+text-align: left;
 // margin: 50px auto;
-width: 400px;
+width: 25em;
 float: right;
 
 }
 
- .author_name_white { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #fff; font-size: 20px; } 
- .profile_pic{ font-family:"Wellfleet"; color: #94a4a4; font-size: 20px;} 
- .quotes_container { width: 800px; margin: 0 auto; }
-#christmas_tree { background: url('../img/christmas-tree.png')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
-// #divider { background: url('../img/2.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
+
+ .profile_pic img{ height: 25em; width: 22em;} 
+ .quotes_container { width: 50em; margin: 0 auto; }
+
 
 #slide1, #slide2{ width: 100%; height:auto;  min-height: 100%;
-  min-width: 1024px; }
+  min-width: 64em; }
 #slide1{
 background:url('../img/IMG_0847 2.JPG') 100% 0 no-repeat;
 color: #fff;
 
-height: 600px;
+height: 37em;
 margin: 0;
-padding: 200px 0 260px 0;
+padding: 12.5em 0 16.25em 0;
 background-size: 100% 100%;
 }
 #slide2{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 color: #fff;
-height: 600px;
+height: 37.5em;
 margin: 0 auto;
 overflow: hidden;
-padding: 200px 0;
+padding: 12.5em 0;
 background-size: 100% 100%;
 }
 #slide3{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 color: #fff;
-height: 600px;
-padding: 170px 0 0 0;
+height: 37.5em;
+padding: 12.5em 0;
 background-size: 100% 100%;
 }
 
