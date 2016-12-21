@@ -47,7 +47,7 @@ width: 10%;
 
 height: 10%;
 position: fixed;
-margin-top: 2em;
+margin-top: 1em;
     display: block;
     float: right;
     text-align: right;
@@ -108,7 +108,7 @@ float: right;
 
 
  .profile_pic img{ height: 25em; width: 22em;} 
- .quotes_container { width: 50em; margin: 0 auto; }
+ .quotes_container { width: 50em; margin: 0 auto; padding-top: 1em;}
 
 
 #slide1, #slide2{ width: 100%; height:auto;  min-height: 100%;
@@ -118,7 +118,7 @@ background:url('../img/IMG_0847 2.JPG') 100% 0 no-repeat;
 color: #fff;
 
 height: 37em;
-margin: 0;
+margin: 0 auto;
 padding: 12.5em 0 16.25em 0;
 background-size: 100% 100%;
 }
@@ -126,16 +126,19 @@ background-size: 100% 100%;
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 color: #fff;
 height: 37.5em;
+
 margin: 0 auto;
 overflow: hidden;
-padding: 12.5em 0;
+padding: 1.5em 0;
 background-size: 100% 100%;
 }
 #slide3{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 color: #fff;
+min-width: 64em;
+margin:0 auto;
 height: 37.5em;
-padding: 12.5em 0;
+padding: 4.5em 0;
 background-size: 100% 100%;
 }
 
@@ -144,27 +147,31 @@ background-size: 100% 100%;
 #slide4{
 background:  url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 color: #333333;
-height: 300px;
-padding: 200px 0;
+height: 37.5em;
+min-width: 64em;
+padding: 10.5em 0;
 background-size: 100% 100%;
 }
 #slide5{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
-height: 300px;
+height: 37.5em;
+min-width: 64em;
 margin: 0 auto;
-padding: 250px 0;
+padding: 1.5em 0;
 background-size: 100% 100%;
 }
 
 #slide6{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
-height: 300px;
+height: 37.5em;
+min-width: 64em;
 margin: 0 auto;
-padding: 250px 0;
+padding: 16.5em 0;
 background-size: 100% 100%;
 }
 
 #contact_me a img{
-	padding:10px;
+	padding:0.63em;
+	text-align: center;
 }
 
