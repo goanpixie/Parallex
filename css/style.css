@@ -115,7 +115,7 @@ float: right;
 }
 
 
- .profile_pic img{ height: 25em; width: 22em;} 
+ .profile_pic img{ height: 22em; width: 22em; border-radius: 200px; border:2px solid brown;} 
  .quotes_container { width: 50em; margin: 0 auto; padding-top: 1em;}
 
 
