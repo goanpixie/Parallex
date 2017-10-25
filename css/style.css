@@ -133,7 +133,7 @@ background-size: 100% 100%;
 #slide2{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 color: #fff;
-height: 37.5em;
+height: 40.5em;
 
 margin: 0 auto;
 overflow: hidden;
@@ -145,7 +145,7 @@ background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
 color: #fff;
 min-width: 64em;
 margin:0 auto;
-height: 37.5em;
+height: 39.5em;
 padding: 4.5em 0;
 background-size: 100% 100%;
 }
@@ -162,7 +162,7 @@ background-size: 100% 100%;
 }
 #slide5{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
-height: 37.5em;
+height: 54.5em;
 min-width: 64em;
 margin: 0 auto;
 padding: 1.5em 0;
@@ -171,7 +171,7 @@ background-size: 100% 100%;
 
 #slide6{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
-height: 37.5em;
+height: 20.5em;
 min-width: 64em;
 margin: 0 auto;
 padding: 16.5em 0;
@@ -183,3 +183,7 @@ background-size: 100% 100%;
 	text-align: center;
 }
 
+.footer{
+    text-align: center;
+    padding-top: 25%;
+}
