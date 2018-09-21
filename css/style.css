@@ -1,7 +1,7 @@
-//issues:
+/* //issues
 // make it mobile friendly
 // ipad friendly
-// browser friendly
+// browser friendly */
 
 
 html{
@@ -83,7 +83,7 @@ padding-right:1em;
 #nav li a:hover { color: orange; opacity:1; }
 
 .black-box{
-height: 12em;
+height: 14em;
 width: 7em;
 background: black;
 padding-top: 0em ;
@@ -115,7 +115,7 @@ float: right;
 }
 
 
- .profile_pic img{ height: 22em; width: 22em; border-radius: 200px; border:2px solid brown;} 
+ .profile_pic img{ height: 22em; width: 22em; border-radius: 200px; border:2px solid brown;}
  .quotes_container { width: 50em; margin: 0 auto; padding-top: 1em;}
 
 
@@ -162,7 +162,7 @@ background-size: 100% 100%;
 }
 #slide5{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
-height: 54.5em;
+height: 35.5em;
 min-width: 64em;
 margin: 0 auto;
 padding: 1.5em 0;
@@ -171,11 +171,20 @@ background-size: 100% 100%;
 
 #slide6{
 background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
-height: 20.5em;
+height: 40.5em;
 min-width: 64em;
 margin: 0 auto;
-padding: 16.5em 0;
+padding: 14.5em 0;
 background-size: 100% 100%;
+}
+
+#slide7{
+    background: url(../img/wp2.jpg) 50% 0 no-repeat fixed;
+    height: 20.5em;
+    min-width: 64em;
+    margin: 0 auto;
+    padding: 16.5em 0;
+    background-size: 100% 100%;
 }
 
 #contact_me a img{
@@ -186,4 +195,35 @@ background-size: 100% 100%;
 .footer{
     text-align: center;
     padding-top: 25%;
+}
+
+@media only screen and (min-width: 768px) {
+
+body{
+    width:100%;
+}
+
+#slide1, #slide2{
+    width:100%;
+    height:auto;
+}
+
+#slide1{
+    height:85em;
+}
+
+#nav li a {font-size: 1.25em;
+}
+
+.black-box{
+    height: 16em;
+    width: 10em;
+    background: black;
+    padding-top: 0em ;
+    z-index: -1;
+    position:absolute;
+    radius:0.5em;
+
+    }
+
 }

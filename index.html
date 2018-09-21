@@ -13,15 +13,15 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
     <script>
-    $(document).ready(function() {
-        $('a[href*=#]').each(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') & amp; amp; & amp; amp; location.hostname == this.hostname & amp; amp; & amp; amp; this.hash.replace(/#/, '')) {
+        $(document).ready(function () {
+            $('a[href*=#]').each(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') & amp; amp; & amp; amp; location.hostname == this.hostname & amp; amp; & amp; amp; this.hash.replace(/#/, '')) {
                 var $targetId = $(this.hash),
                     $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
                 var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
                 if ($target) {
                     var targetOffset = $target.offset().top;
-                    $(this).click(function() {
+                    $(this).click(function () {
                         $("#nav li a").removeClass("active");
                         $(this).addClass('active');
                         $('html, body').animate({
@@ -35,47 +35,48 @@
 
     });
 
-    $(document).ready(function() {
-        $('a[href*=#]').each(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname && this.hash.replace(/#/, '')) {
-                var $targetId = $(this.hash),
-                    $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
-                var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-                if ($target) {
-                    var targetOffset = $target.offset().top;
-                    $(this).click(function() {
-                        $("#nav li a").removeClass("active");
-                        $(this).addClass('active');
-                        $('html, body').animate({
-                            scrollTop: targetOffset
-                        }, 1000);
-                        return false;
-                    });
+        $(document).ready(function () {
+            $('a[href*=#]').each(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname && this.hash.replace(/#/, '')) {
+                    var $targetId = $(this.hash),
+                        $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                    var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                    if ($target) {
+                        var targetOffset = $target.offset().top;
+                        $(this).click(function () {
+                            $("#nav li a").removeClass("active");
+                            $(this).addClass('active');
+                            $('html, body').animate({
+                                scrollTop: targetOffset
+                            }, 1000);
+                            return false;
+                        });
+                    }
                 }
-            }
-        });
+            });
 
-    });
+        });
     </script>
 </head>
 
 <body>
     <header id="header">
 
-    <div class="black-box"> 
-        <div class="content">
-           
-            <nav id="nav">
-                <ul>
-                    <li><a href="#slide1" class="active" title="Next Section">Welcome</a></li>
-                    <li><a href="#slide2" class="active" title="Next Section">About Me</a></li>
-                    <li><a href="#slide3" class="active" title="Next Section">Skill Set</a></li>
-                    <li><a href="#slide4" class="active" title="Next Section">Projects</a></li>
-                    <li><a href="#slide5" class="active" title="Next Section">Experience</a></li>
-                    <li><a href="#slide6" class="active" title="Next Section">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="black-box">
+            <div class="content">
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#slide1" class="active" title="Next Section">Welcome</a></li>
+                        <li><a href="#slide2" class="active" title="Next Section">About Me</a></li>
+                        <li><a href="#slide3" class="active" title="Next Section">Skill Set</a></li>
+                        <li><a href="#slide4" class="active" title="Next Section">Projects</a></li>
+                        <li><a href="#slide5" class="active" title="Next Section">Education</a></li>
+                        <li><a href="#slide6" class="active" title="Next Section">Experience</a></li>
+                        <li><a href="#slide7" class="active" title="Next Section">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <!-- <h1>PRIYANKA SHAH</h1> -->
@@ -84,26 +85,39 @@
             <h2>PRIYANKA</h2>
             <h2>SHAH</h2>
             <div id="divider"> </div>
-        
+
             <div id="new_year"> </div>
         </div>
     </div>
     <div id="slide2">
         <div class="content">
             <div class="quotes_container">
-                <h3>About Me <br><br>
-                “Do one thing every day that scares you.” <br>
-                ― Eleanor Roosevelt<hr></h3> 
+                <h3>About Me <br><br> “Do one thing every day that scares you.” <br> ― Eleanor Roosevelt
+                    <hr>
+                </h3>
                 <h6 class="quotes">
 
- <div class="profile_pic"><img src="img/profile.jpg" align="left"/> </div>
- <div id="About_me">
+                    <div class="profile_pic"><img src="img/profile.jpg" align="left" /> </div>
+                    <div id="About_me">
 
- <p>“Hi! Welcome to my page! I am Full stack Webdeveloper. I started my journey as a Biochemist and worked as researcher for National Institutes of Health for 4 years in Alzheimer's research.</p>
+                        <p>“Hi! Welcome to my page! I am Full stack Webdeveloper. I started my journey as a Biochemist
+                            and
+                            worked as researcher for National Institutes of Health for 4 years in Alzheimer's research.</p>
 
- <p>My soul however searched for more creative field where I could express myself with basic starter culture of a laptop and experiment on wider canvas. Coding bug bit me and I havent been the same since. I got formally trained through 3 month full-immersion Coding bootcamp, Coding Dojo, DC(2016) and I am now all game to enter the coding world!”</p>
+                        <p>My soul however searched for more creative field where I could express myself with basic
+                            starter
+                            culture of a laptop and experiment on wider canvas. Coding bug bit me and I havent been the
+                            same
+                            since. I got formally trained through 3 month full-immersion Coding bootcamp, Coding Dojo,
+                            DC(2016)
+                            and I am now all game to enter the coding world!”</p>
 
- <p>I especially love Algorithms and am always up for and to give a challenge. My dream job is to work in diverse team which makes application driven innovative software which is simple and accessble.Besides coding I like travelling, adventure sports & photography.</p></h6>
+                        <p>I especially love Algorithms and am always up for and to give a challenge. My dream job is
+                            to
+                            work in diverse team which makes application driven innovative software which is simple and
+                            accessble
+                            to millions of people. Besides coding I like travelling, adventure sports & photography.</p>
+                </h6>
             </div>
         </div>
     </div>
@@ -111,65 +125,40 @@
     <div id="slide3">
         <div class="content">
             <div class="quotes_container">
-                <h3>Skill Set <br><br>
-                If the only tool you have is a hammer, every problem looks like a nail <br>
-                -Abraham Maslow <hr>
+                <h3>Skill Set <br><br> If the only tool you have is a hammer, every problem looks like a nail <br>
+                    -Abraham
+                    Maslow
+                    <hr>
                 </h3>
                 <h3 class="quotes">
- <div class="about-us">
+                    <div class="about-us">
 
-<b>LANGUAGES</b><br>
-JavaScript,
-Python,
-Ruby
-<hr>
+                        <b>LANGUAGES</b><br> JavaScript, Python, Ruby
+                        <hr>
 
-<b>FRONT END</b> <br>
-Angular JS,
-Express /Socket.IO,
-HTML5, 
-Http Request/Response,
-AJAX
-jQuery<br>
-CSS3: 
- Bootstrap,
- Responsive Web Development 
+                        <b>FRONT END</b> <br> Angular JS, Express /Socket.IO, HTML5, Http Request/Response, jQuery
+                        <br> CSS3: Bootstrap, Responsive Web Development
 
-<hr>
+                        <hr>
 
-<b>DATABASES</b><br>
-SQL (MySQL, SQLite),
-NoSQL (MongoDB),
-Mongoose JS,
-PostgreSQL
+                        <b>DATABASES</b><br> SQL (MySQL, SQLite), NoSQL (MongoDB), Mongoose JS, PostgreSQL
 
-<hr>
-<b>SERVERS</b> <br>
-WEBrick,
-Node JS,
-Apache,
-Nginx
+                        <hr>
+                        <b>SERVERS</b> <br> WEBrick, Node JS, Apache, Nginx
 
-<hr>
+                        <hr>
 
-<b>DEVELOPMENT</b><br>
-Object Oriented Programming,
-MVC,
-Test Driven Development,
-API Integration,
-Shell Commands,
-RESTful Architecture,
-Git and Github Version Control,
-Algorithms
-D3Js
+                        <b>DEVELOPMENT</b><br> Object Oriented Programming, MVC, Test Driven Development, API
+                        Integration,
+                        Shell Commands, RESTful Architecture, Git and Github Version Control, Algorithms and Data
+                        Structures
+                        D3Js
 
-<hr>
+                        <hr>
 
-<b>DEPLOYMENT</b> <br>
-AWS Deployment,
-Heroku
-</div>
-</h3>
+                        <b>DEPLOYMENT</b> <br> AWS Deployment, Heroku
+                    </div>
+                </h3>
                 <img src="" align="left" />
                 <h4 class="author_name_white"></h4>
             </div>
@@ -178,43 +167,41 @@ Heroku
     <div id="slide4">
         <div class="content">
             <div class="quotes_container">
-                <h3>Projects <br><br>
-                Sometimes its not we are underneath, but we do that defines us <br>  
-                -Batman <hr>
+                <h3>Projects <br><br> Sometimes its not we are underneath, but we do that defines us <br> -Batman
+                    <hr>
 
                 </h3>
                 <h3 class="quotes">
-<b>BUCKET-LIST</b> <br>
-Built with MEAN-stack, JavaScript, Angular material, CSS3 
-Tasks: Full development, AWS deployment
+                    <b>EVENT PLANNER</b> <br> Built with RUBY on RAILS, PostgreSQL backend Tasks: Full development,
+                    Heroku
+                    deployment
+                    <a href="https://ideanoter.herokuapp.com">Link</a>
 
-<hr>
+                    <hr>
 
-<b>QUOTE-NOTER</b> <br>
-Built with Python, SQL backend, CSS3 
-Tasks: Full development, AWS deployment
+                    <b>BUCKET-LIST</b> <br> Built with MEAN-stack, JavaScript, Angular material, CSS3 Tasks: Full
+                    development,
+                    AWS deployment
 
-<hr>
+                    <hr>
 
-<b>SHEETY APP</b> <br>
-Built with MEAN-stack, Angular-material and bootstrap
-Tasks: Full development, Github co-ordinated, soon-to-be used 
+                    <b>GROUP CHAT</b> <br> Built a multi-tab/window environment to chat using Express.js
 
-<hr>
+                    <hr>
 
-<b>PROFESSIONAL-NETWORKER</b> <br>
-Built with RUBY on RAILS, PostgreSQL backend
-Tasks: Full development
- 
+                    <b>SHEETY APP</b> <br> Built with MEAN-stack, Angular-material and bootstrap Tasks: Full
+                    development,
+                    Github co-ordinated, soon-to-be used
 
-<hr>
+                    <hr>
 
-<b>EVENT PLANNER</b> <br>
-Built with RUBY on RAILS, PostgreSQL backend
-Tasks: Full development, Heroku deployment
-<a href="https://ideanoter.herokuapp.com">Link</a>
+                    <b>PROFESSIONAL-NETWORKER</b> <br> Built with RUBY on RAILS, PostgreSQL backend Tasks: Full
+                    development
 
-</h3>
+                    <hr>
+
+
+                </h3>
                 <img src="" align="left" />
                 <h4 class="author_name_gray"></h4>
             </div>
@@ -223,89 +210,112 @@ Tasks: Full development, Heroku deployment
     <div id="slide5">
         <div class="content">
             <div class="quotes_container">
-                <h3>
-                    Stay Hungry, Stay Foolish <br>
-                    -Steve Jobs <hr>
+                <h3>Education <br><br> Stay Hungry, Stay Foolish <br> -Steve Jobs
+                    <hr>
                 </h3>
-                
-<h3>Education </h3>
-<h3 class="quotes">
-<b>Coding Dojo</b> <br>
-June 2016 - October 2016
-Full-immersion onsite program
 
-<hr>
 
-<b>Johns Hopkins University </b> <br>
-September 2009 –March 2011
-Master of Science (Major: Biotechnology)
-</h3>
+                <h3 class="quotes">
+                    <b>Coding Dojo</b> <br> June, 2016 to October, 2016 <br> Fulltime immersion onsite program
 
-<hr>
+                    <hr>
 
-<h3>Experience </h3>
-<h3 class="quotes">
-<b><u>Frontend Developer</u></b> >>&nbsp;&nbsp;Fiskkit, SF (April,2017 - Present) <br><br>
-Its News discussion platform which uses crowd sourcing to validate news articles. A revolutioanry take at siphoning out fake-news using people power. <br>
-- I build the Social Tab feature on Home page to increase user interaction through follow/unfollow feature. <br>
-- Currently working with a team to increasing social media sharing of the site using open graph protocol, building out a payment module for the site using Chargebee and getting the site ready for Recursive commenting feature.
+                    <b>Johns Hopkins University </b> <br> September, 2009 to March, 2011 <br> Master of Science (Major:
+                    Biotechnology)
 
-<hr>
+                    <hr>
 
-<b><u>Biochemist</u></b> >>&nbsp;&nbsp;National Institutes of Health, MD (2011-2015) <br><br>
-Worked on a protein involved in Alzheimer’s disease called Neurotensin (NTR). Performed large-scale Protein expression for NTR, designed experiments for gene cloning and gene manipulation. <br>
-<u>Publications: </u><br>
-1.Structure of the agonist-bound Neurotensin receptor, Nature (2012) <br>
-2.Structural prerequisites for G-protein activation by the Neurotensin receptor, Nature Communications (2015) <br>
-3.Screening of Neem extracts for microbial anti-chaperone activity by in vitro enzyme refolding assay, 3 Biotech (2017)
+                    <b>Padmashree Dr.D.Y.Patil Institute, Mumbai-India</b> <br> August, 2005 to May, 2009 <br> B.Tech
+                    in
+                    Biotechnology
+                </h3>
 
-<hr>
-
-</h3>
-
-                <img src="" align="left" />
-                <h4 class="author_name_white"></h4>
-            </div>
-            <div id="copyright">
-                <a href=""></a>
+                <hr>
             </div>
         </div>
     </div>
 
-<div id="slide6">
+
+    <div id="slide6">
         <div id="content">
             <div class="quotes_container">
-                
-            <h3>Contact</h3>
-
+                <h3>Experience </h3>
                 <h3 class="quotes">
-                 <p>You can check out my latest coding projects on &nbsp;:&nbsp;https://github.com/goanpixie 
-                 <a href="https://github.com/goanpixie"><img src="img/Octocat.png" height="40" width="auto" alt="email_logo"></a></p>
+                    <b><u>Frontend Developer</u></b>: &nbsp;&nbsp;Fiskkit, SF (April,2017 - Present) <br><br> Its News
+                    discussion
+                    platform which uses crowd sourcing to validate news articles. A revolutioanry take at siphoning out
+                    fake-news
+                    using people power. <a href="http://fiskkit.com/">Link</a> <br> - I build the Social Tab/Social
+                    Feed feature on Home page to increase user
+                    interaction
+                    through
+                    follow/unfollow feature. <br>
+                    Frontend lead on Fiskkit Classroom : Its a education software to help Teacher's to tap and graph
+                    critical thinking of student on a subject over a period of time.<a href="http://classroom.fiskkit.com/">Link</a>
+                    <br>
+                    Worked on site login system, security and building user-friendly. <br>
+                    Currently working on building profile dashboard for Teacher’s to make homework monitoring and
+                    assignment easier.
+                    <br><br>
 
-                 <hr> 
-                Got a project you would like me to work on? Or how about just a friendly chat? Give me an email and we can grab a coffee. <br><br>
-                
 
-
-                <div id="contact_me">
-                    <a href="mailto:goanpri87@gmail.com"><img src="img/email_logo.png" height="40" width="auto" alt="email_logo">
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/priyankarshah"><img src="img/linkedin.png" height="40" width="auto" alt="email_logo">
-                    </a>
-
-                    <a href="https://twitter.com/goanpixie"><img src="img/Twitter.png" height="40" width="auto" alt="email_logo">
-                    </a>
-
-                </div>
-                <div class="footer">
                     <hr>
-                    Copyright &#169; 2017 Priyanka Shah • CA-based Frontend Developer
-                </div>
-                </h3>      
+
+                    <b><u>Biochemist</u></b>: &nbsp;&nbsp;National Institutes of Health, MD (2011-2015) <br><br>
+                    Worked
+                    on a protein involved in Alzheimer’s disease called Neurotensin (NTR). Performed large-scale
+                    Protein
+                    expression for NTR, designed experiments for gene cloning and gene manipulation. <br>
+                    <u>Publications: </u><br> 1.Structure of the agonist-bound Neurotensin receptor, Nature (2012) <br>
+                    2.Structural
+                    prerequisites for G-protein activation by the Neurotensin receptor, Nature Communications (2015)
+                    <br> 3.Screening
+                    of Neem extracts for microbial anti-chaperone activity by in vitro enzyme refolding assay, 3
+                    Biotech
+                    (2017)
+
+                    <hr>
+
+                </h3>
             </div>
         </div>
-</div>
+    </div>
+
+    <div id="slide7">
+        <div id="content">
+            <div class="quotes_container">
+
+                <h3>Contact</h3>
+
+                <h3 class="quotes">
+                    <p>You can check out my latest coding projects on &nbsp;:&nbsp;https://github.com/goanpixie
+                        <a href="https://github.com/goanpixie"><img src="img/Octocat.png" height="40" width="auto" alt="email_logo"></a></p>
+
+                    <hr> Got a project you would like me to work on? Or how about just a friendly chat? Give me an
+                    email
+                    and we can grab a coffee. <br><br>
+
+
+
+                    <div id="contact_me">
+                        <a href="mailto:goanpri87@gmail.com"><img src="img/email_logo.png" height="40" width="auto" alt="email_logo">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/priyankarshah"><img src="img/linkedin.png" height="40"
+                                width="auto" alt="email_logo">
+                        </a>
+
+                        <a href="https://twitter.com/goanpixie"><img src="img/Twitter.png" height="40" width="auto" alt="email_logo">
+                        </a>
+
+                    </div>
+                    <div class="footer">
+                        <hr> Copyright &#169; 2017 Priyanka Shah • SF-based Frontend Developer
+                    </div>
+                </h3>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
